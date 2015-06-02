@@ -59,8 +59,8 @@ footer {
   width: 100%;
 }
 
-/* line 56, ../scss/style.scss */
-.navigation {
+/* line 57, ../scss/style.scss */
+nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
   width: 200px;
@@ -74,8 +74,8 @@ footer {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 70, ../scss/style.scss */
-.navigation li a {
+/* line 71, ../scss/style.scss */
+nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
   padding: 1em;
@@ -83,7 +83,13 @@ footer {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
+.desktop-menu {
+  display: none;
+}
+
+/* slideout js css */
+/* line 88, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -97,20 +103,60 @@ footer {
   display: none;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 98, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 104, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 3, ../scss/_tablet.scss */
+  .mobile-menu, .ham {
+    display: none;
+  }
+
+  /* line 8, ../scss/_tablet.scss */
+  header div.logo {
+    width: 25%;
+  }
+
+  /* line 13, ../scss/_tablet.scss */
+  nav.desktop-menu {
+    display: block;
+    background-color: #43857C;
+  }
+  /* line 16, ../scss/_tablet.scss */
+  nav.desktop-menu ul.navigation {
+    margin-top: 0;
+  }
+  /* line 18, ../scss/_tablet.scss */
+  nav.desktop-menu ul.navigation li {
+    float: left;
+    list-style: none;
+    font-size: 18px;
+  }
+  /* line 22, ../scss/_tablet.scss */
+  nav.desktop-menu ul.navigation li a {
+    display: block;
+    padding: 1em;
+    background: #43857C;
+    color: #fff;
+  }
+  /* line 27, ../scss/_tablet.scss */
+  nav.desktop-menu ul.navigation li a:hover {
+    background-color: #0D5047;
+    color: #fff;
+  }
 }

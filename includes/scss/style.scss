@@ -53,30 +53,38 @@ footer {
   width: 100%;
 }
 
-.navigation {
-  list-style: none;
-  background: $color-secondary-2-0;
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: auto;
-  z-index: 0;
-  padding-left: 0px;
-  margin-top: 0px;
-  li {
-    a {
-      color: #fff;
-      display: block;
-      padding: 1em;
-      font-size: 14px;
-      border-bottom: 1px solid $color-primary-2;
+nav.mobile-menu {
+  .navigation {
+    list-style: none;
+    background: $color-secondary-2-0;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 0;
+    padding-left: 0px;
+    margin-top: 0px;
+    li {
+      a {
+        color: #fff;
+        display: block;
+        padding: 1em;
+        font-size: 14px;
+        border-bottom: 1px solid $color-primary-2;
+      }
     }
   }
 }
 
+
+.desktop-menu {
+  display: none;
+}
+
+/* slideout js css */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -104,3 +112,5 @@ footer {
 .slideout-open .slideout-menu {
   display: block;
 }
+
+@import "tablet";
