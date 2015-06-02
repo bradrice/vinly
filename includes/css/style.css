@@ -6,21 +6,24 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 11, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 header {
   background-color: #F63A66;
   min-height: 200px;
   width: 100%;
   padding: 1em;
 }
-/* line 16, ../scss/style.scss */
+/* line 19, ../scss/style.scss */
 header div.logo {
   width: 33%;
   float: left;
 }
-/* line 20, ../scss/style.scss */
+/* line 23, ../scss/style.scss */
 header div.ham {
   width: 40px;
   position: absolute;
@@ -28,22 +31,86 @@ header div.ham {
   right: 1em;
 }
 
-/* line 28, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 div.view {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 38, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
   color: #fff;
   width: 100%;
+}
+
+/* line 56, ../scss/style.scss */
+.navigation {
+  list-style: none;
+  background: #33D8C1;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  z-index: 0;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+/* line 70, ../scss/style.scss */
+.navigation li a {
+  color: #fff;
+  display: block;
+  padding: 1em;
+  font-size: 14px;
+  border-bottom: 1px solid #C36278;
+}
+
+/* line 80, ../scss/style.scss */
+.slideout-menu {
+  position: fixed;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 200 px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+/* line 93, ../scss/style.scss */
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 98, ../scss/style.scss */
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+/* line 104, ../scss/style.scss */
+.slideout-open .slideout-menu {
+  display: block;
 }

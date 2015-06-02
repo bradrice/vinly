@@ -20,36 +20,52 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="view">
-            <header>
-                <div class="logo">
-                    <img src="includes/images/vinyl.svg" alt="vinyl" />
-                </div>
-                <div class="ham">
-                    <img src="includes/images/hamburger.svg" alt="menu"/>
-                </div>
-                <nav>
-                    <ul class="navigation">
-                        <li class="nav-item"><a href="#">Home</a></li>
-                        <li class="nav-item"><a href="#">About</a></li>
-                        <li class="nav-item"><a href="#">Albums</a></li>
-                        <li class="nav-item"><a href="#">Blog</a></li>
-                        <li class="nav-item"><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section id="main">
-                <div class="main_content">
-                    <h1>Vinyl</h1>
-                    <h2>We are vintage</h2>
-                </div>
-            </section>
-            <footer>
-                Vinyl vintage records
-            </footer>
+        <nav id="menu">
+            <ul class="navigation">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Albums</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="view" id="panel">
+                <header>
+                    <div class="logo">
+                        <img src="includes/images/vinyl.svg" alt="vinyl" />
+                    </div>
+                    <div class="ham">
+                        <img src="includes/images/hamburger.svg" class="toggle-button"  alt="menu"/>
+                    </div>
+
+                </header>
+                <section id="main">
+                    <div class="main_content">
+                        <h1>Vinyl</h1>
+                        <h2>We are vintage</h2>
+                    </div>
+                </section>
+                <footer>
+                    Vinyl vintage records
+                </footer>
+
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="includes/lib/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="includes/lib/slideout.js/dist/slideout.min.js"></script>
+            <script>
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'side': 'right',
+                'padding': 200,
+                'tolerance': 70
+            });
+            // Toggle button
+            $('.toggle-button').on('click', function() {
+                slideout.toggle();
+            });
+        </script>
     </body>
 </html>
