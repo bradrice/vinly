@@ -5,30 +5,45 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 100%;
 }
 
-/* line 10, ../scss/style.scss */
+/* line 11, ../scss/style.scss */
 header {
   background-color: #F63A66;
   min-height: 200px;
   width: 100%;
+  padding: 1em;
+}
+/* line 16, ../scss/style.scss */
+header div.logo {
+  width: 33%;
+  float: left;
+}
+/* line 20, ../scss/style.scss */
+header div.ham {
+  width: 40px;
+  position: absolute;
+  top: 1em;
+  right: 1em;
 }
 
-/* line 16, ../scss/style.scss */
+/* line 28, ../scss/style.scss */
 div.view {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
   color: #fff;
+  width: 100%;
 }
