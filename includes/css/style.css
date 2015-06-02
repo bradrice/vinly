@@ -1,8 +1,73 @@
 /* main site web styles */
+@import url(http://fonts.googleapis.com/css?family=Passion+One|Open+Sans:300,600,400);
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
 /* Main Secondary color (2) */
 /* Main Complement color */
-@import url(http://fonts.googleapis.com/css?family=Passion+One|Open+Sans);
-/* line 6, ../scss/style.scss */
+/* line 13, ../scss/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -11,21 +76,22 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 6300;
 }
 
-/* line 16, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 header {
   background-color: #F63A66;
   min-height: 200px;
   width: 100%;
   padding: 1em;
 }
-/* line 21, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 header div.logo {
   width: 33%;
   float: left;
 }
-/* line 25, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
 header div.ham {
   width: 40px;
   position: absolute;
@@ -33,7 +99,7 @@ header div.ham {
   right: 1em;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 div.view {
   display: flex;
   flex-direction: column;
@@ -48,12 +114,12 @@ div.view {
   z-index: 1;
 }
 
-/* line 47, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -61,7 +127,7 @@ footer {
   width: 100%;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
@@ -76,7 +142,7 @@ nav.mobile-menu .navigation {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 73, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
@@ -85,13 +151,13 @@ nav.mobile-menu .navigation li a {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 85, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .desktop-menu {
   display: none;
 }
 
 /* slideout js css */
-/* line 90, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -105,20 +171,20 @@ nav.mobile-menu .navigation li a {
   display: none;
 }
 
-/* line 103, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 108, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 114, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
@@ -130,36 +196,130 @@ nav.mobile-menu .navigation li a {
   }
 
   /* line 8, ../scss/_tablet.scss */
-  header div.logo {
+  header div.head-element {
+    max-width: 43.75em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  header div.head-element:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 10, ../scss/_tablet.scss */
+  header div.head-element div.logo {
     width: 25%;
     max-width: 250px;
   }
 
-  /* line 14, ../scss/_tablet.scss */
+  /* line 17, ../scss/_tablet.scss */
   nav.desktop-menu {
     display: block;
     background-color: #43857C;
   }
-  /* line 17, ../scss/_tablet.scss */
+  /* line 20, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation {
+    max-width: 43.75em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
     margin-top: 0;
   }
-  /* line 19, ../scss/_tablet.scss */
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  nav.desktop-menu ul.navigation:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 23, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li {
+    width: 18.64407%;
     float: left;
     list-style: none;
     font-size: 18px;
   }
-  /* line 23, ../scss/_tablet.scss */
+  /* line 28, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li a {
     display: block;
     padding: 1em;
     background: #43857C;
     color: #fff;
   }
-  /* line 28, ../scss/_tablet.scss */
+  /* line 33, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li a:hover {
     background-color: #0D5047;
     color: #fff;
+  }
+
+  /* line 42, ../scss/_tablet.scss */
+  div.wrap {
+    max-width: 43.75em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  div.wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 44, ../scss/_tablet.scss */
+  div.wrap div.main_content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 47, ../scss/_tablet.scss */
+  div.wrap div.col1 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 50, ../scss/_tablet.scss */
+  div.wrap div.col2 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 53, ../scss/_tablet.scss */
+  div.wrap div.col3 {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 2, ../scss/_desktop.scss */
+  div.wrap, header div.head-element {
+    max-width: 65.25em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  div.wrap:after, header div.head-element:after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 }

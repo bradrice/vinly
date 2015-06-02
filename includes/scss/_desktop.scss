@@ -1,0 +1,5 @@
+@media screen and (min-width: 960px) {
+  div.wrap, header div.head-element {
+    @include container(65.25em);
+  }
+}

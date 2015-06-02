@@ -5,9 +5,12 @@
   }
 
   header {
-    div.logo {
-      width: 25%;
-      max-width: 250px;
+    div.head-element {
+      @include container(43.75em);
+      div.logo {
+        width: 25%;
+        max-width: 250px;
+      }
     }
   }
 
@@ -15,8 +18,10 @@
     display: block;
     background-color: $color-secondary-2-2;
     ul.navigation {
+      @include container(43.75em);
       margin-top: 0;
       li {
+        width: span(2.4);
         float: left;
         list-style: none;
         font-size: 18px;
@@ -33,4 +38,22 @@
       }
     }
   }
+
+  div.wrap {
+    @include container(43.75em);
+    div.main_content {
+      @include span(12);
+    }
+    div.col1 {
+      @include span(4 first);
+    }
+    div.col2 {
+    @include span(4);
+    }
+    div.col3 {
+      @include span(4 last);
+    }
+
+  }
 }
+
