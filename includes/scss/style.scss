@@ -1,6 +1,7 @@
 /* main site web styles */
 
 @import "variables";
+@import url(http://fonts.googleapis.com/css?family=Passion+One|Open+Sans);
 
 body {
   margin: 0;
@@ -9,6 +10,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {

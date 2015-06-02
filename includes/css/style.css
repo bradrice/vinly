@@ -1,7 +1,8 @@
 /* main site web styles */
 /* Main Secondary color (2) */
 /* Main Complement color */
-/* line 5, ../scss/style.scss */
+@import url(http://fonts.googleapis.com/css?family=Passion+One|Open+Sans);
+/* line 6, ../scss/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -9,21 +10,22 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* line 14, ../scss/style.scss */
+/* line 16, ../scss/style.scss */
 header {
   background-color: #F63A66;
   min-height: 200px;
   width: 100%;
   padding: 1em;
 }
-/* line 19, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 header div.logo {
   width: 33%;
   float: left;
 }
-/* line 23, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 header div.ham {
   width: 40px;
   position: absolute;
@@ -31,7 +33,7 @@ header div.ham {
   right: 1em;
 }
 
-/* line 31, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
 div.view {
   display: flex;
   flex-direction: column;
@@ -46,12 +48,12 @@ div.view {
   z-index: 1;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -59,7 +61,7 @@ footer {
   width: 100%;
 }
 
-/* line 57, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
@@ -74,7 +76,7 @@ nav.mobile-menu .navigation {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 71, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
@@ -83,13 +85,13 @@ nav.mobile-menu .navigation li a {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 .desktop-menu {
   display: none;
 }
 
 /* slideout js css */
-/* line 88, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -103,20 +105,20 @@ nav.mobile-menu .navigation li a {
   display: none;
 }
 
-/* line 101, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 106, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 112, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
