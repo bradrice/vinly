@@ -130,31 +130,32 @@ nav.mobile-menu .navigation li a {
   /* line 8, ../scss/_tablet.scss */
   header div.logo {
     width: 25%;
+    max-width: 250px;
   }
 
-  /* line 13, ../scss/_tablet.scss */
+  /* line 14, ../scss/_tablet.scss */
   nav.desktop-menu {
     display: block;
     background-color: #43857C;
   }
-  /* line 16, ../scss/_tablet.scss */
+  /* line 17, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation {
     margin-top: 0;
   }
-  /* line 18, ../scss/_tablet.scss */
+  /* line 19, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li {
     float: left;
     list-style: none;
     font-size: 18px;
   }
-  /* line 22, ../scss/_tablet.scss */
+  /* line 23, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li a {
     display: block;
     padding: 1em;
     background: #43857C;
     color: #fff;
   }
-  /* line 27, ../scss/_tablet.scss */
+  /* line 28, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li a:hover {
     background-color: #0D5047;
     color: #fff;
