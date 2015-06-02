@@ -306,7 +306,7 @@ nav.mobile-menu .navigation li a {
 }
 @media screen and (min-width: 960px) {
   /* line 2, ../scss/_desktop.scss */
-  div.wrap, header div.head-element {
+  div.wrap, header div.head-element, nav.desktop-menu ul.navigation {
     max-width: 65.25em;
     margin-left: auto;
     margin-right: auto;
@@ -317,7 +317,7 @@ nav.mobile-menu .navigation li a {
     background-position: left top;
   }
   /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-  div.wrap:after, header div.head-element:after {
+  div.wrap:after, header div.head-element:after, nav.desktop-menu ul.navigation:after {
     content: " ";
     display: block;
     clear: both;
