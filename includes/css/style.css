@@ -10,23 +10,24 @@ body {
 /* line 10, ../scss/style.scss */
 header {
   background-color: #F63A66;
-  min-height: 200px;
+  min-height: 160px;
+  min-height: 160px;
   width: 100%;
 }
 
-/* line 16, ../scss/style.scss */
+/* line 17, ../scss/style.scss */
 div.view {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 23, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
