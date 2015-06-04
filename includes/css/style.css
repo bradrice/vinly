@@ -1,7 +1,7 @@
 /* main site web styles */
 /* Main Secondary color (2) */
 /* Main Complement color */
-@import url(http://fonts.googleapis.com/css?family=Passion+One|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Passion+One|Open+Sans:400,300|Open+Sans+Condensed:300);
 /* line 6, ../scss/style.scss */
 body {
   margin: 0;
