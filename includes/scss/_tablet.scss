@@ -55,5 +55,16 @@
     }
 
   }
+
+  /* albums */
+  div.album {
+    margin: 2em 0;
+    h3 {
+      color: $color-secondary-1-4;
+    }
+    img {
+      @include span(2 of 4);
+    }
+  }
 }
 

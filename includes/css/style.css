@@ -74,7 +74,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 6300;
+  font-weight: 400;
 }
 
 /* line 24, ../scss/style.scss */
@@ -97,7 +97,34 @@ header div.ham {
   right: 1em;
 }
 
-/* line 41, ../scss/style.scss */
+/* typography */
+/* line 43, ../scss/style.scss */
+h1, h2, h3 {
+  font-weight: 600;
+  margin: .5em 0;
+}
+
+/* line 48, ../scss/style.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 52, ../scss/style.scss */
+h2 {
+  font-size: 1.8em;
+}
+
+/* line 56, ../scss/style.scss */
+h3 {
+  font-size: 1.6em;
+}
+
+/* line 60, ../scss/style.scss */
+p {
+  font-weight: 300;
+}
+
+/* line 64, ../scss/style.scss */
 div.view {
   display: flex;
   flex-direction: column;
@@ -112,12 +139,13 @@ div.view {
   z-index: 1;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 78, ../scss/style.scss */
 section#main {
   flex: 1;
+  padding: 1em;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -125,7 +153,7 @@ footer {
   width: 100%;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
@@ -140,7 +168,7 @@ nav.mobile-menu .navigation {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 81, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
@@ -149,13 +177,13 @@ nav.mobile-menu .navigation li a {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 .desktop-menu {
   display: none;
 }
 
 /* slideout js css */
-/* line 98, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -169,22 +197,36 @@ nav.mobile-menu .navigation li a {
   display: none;
 }
 
-/* line 111, ../scss/style.scss */
+/* line 135, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 116, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 122, ../scss/style.scss */
+/* line 146, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
+}
+
+/* albums */
+/* line 151, ../scss/style.scss */
+div.album {
+  margin: 2em 0;
+}
+/* line 153, ../scss/style.scss */
+div.album h3 {
+  color: #552300;
+}
+/* line 156, ../scss/style.scss */
+div.album img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -198,11 +240,6 @@ nav.mobile-menu .navigation li a {
     max-width: 43.75em;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 8.47458%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   header div.head-element:after {
@@ -226,11 +263,6 @@ nav.mobile-menu .navigation li a {
     max-width: 43.75em;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 8.47458%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
     margin-top: 0;
   }
   /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
@@ -264,11 +296,6 @@ nav.mobile-menu .navigation li a {
     max-width: 43.75em;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 8.47458%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   div.wrap:after {
@@ -301,6 +328,22 @@ nav.mobile-menu .navigation li a {
     float: right;
     margin-right: 0;
   }
+
+  /* albums */
+  /* line 60, ../scss/_tablet.scss */
+  div.album {
+    margin: 2em 0;
+  }
+  /* line 62, ../scss/_tablet.scss */
+  div.album h3 {
+    color: #552300;
+  }
+  /* line 65, ../scss/_tablet.scss */
+  div.album img {
+    width: 47.36842%;
+    float: left;
+    margin-right: 5.26316%;
+  }
 }
 @media screen and (min-width: 960px) {
   /* line 2, ../scss/_desktop.scss */
@@ -308,11 +351,6 @@ nav.mobile-menu .navigation li a {
     max-width: 65.25em;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 8.47458%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   div.wrap:after, header div.head-element:after, nav.desktop-menu ul.navigation:after {
