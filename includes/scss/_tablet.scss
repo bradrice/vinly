@@ -21,7 +21,7 @@
       @include container(43.75em);
       margin-top: 0;
       li {
-        width: span(2.4);
+        width: percentage(1/5);
         float: left;
         list-style: none;
         font-size: 18px;

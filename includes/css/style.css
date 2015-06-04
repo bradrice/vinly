@@ -241,7 +241,7 @@ nav.mobile-menu .navigation li a {
   }
   /* line 23, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li {
-    width: 18.64407%;
+    width: 20%;
     float: left;
     list-style: none;
     font-size: 18px;
