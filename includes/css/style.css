@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 13, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -77,19 +77,19 @@ body {
   font-weight: 400;
 }
 
-/* line 24, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 header {
   background-color: #F63A66;
   min-height: 200px;
   width: 100%;
   padding: 1em;
 }
-/* line 29, ../scss/style.scss */
+/* line 30, ../scss/style.scss */
 header div.logo {
   width: 33%;
   float: left;
 }
-/* line 33, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 header div.ham {
   width: 40px;
   position: absolute;
@@ -98,35 +98,37 @@ header div.ham {
 }
 
 /* typography */
-/* line 43, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 h1, h2, h3 {
   font-weight: 600;
   margin: .5em 0;
 }
 
-/* line 48, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 h2 {
   font-size: 1.8em;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 h3 {
   font-size: 1.6em;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 p {
   font-weight: 300;
 }
 
-/* line 64, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 div.view {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   height: 100vh;
   min-width: 100%;
@@ -139,13 +141,14 @@ div.view {
   z-index: 1;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 section#main {
+  -webkit-flex: 1;
   flex: 1;
   padding: 1em;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -153,7 +156,7 @@ footer {
   width: 100%;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
@@ -168,7 +171,7 @@ nav.mobile-menu .navigation {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 105, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
@@ -177,13 +180,13 @@ nav.mobile-menu .navigation li a {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .desktop-menu {
   display: none;
 }
 
 /* slideout js css */
-/* line 122, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -197,34 +200,34 @@ nav.mobile-menu .navigation li a {
   display: none;
 }
 
-/* line 135, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 140, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 146, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
 /* albums */
-/* line 151, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 div.album {
   margin: 2em 0;
 }
-/* line 153, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 div.album h3 {
   color: #552300;
 }
-/* line 156, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 div.album img {
   width: 100%;
 }
