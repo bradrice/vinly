@@ -101,9 +101,8 @@ header div.ham {
 div.view {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   min-width: 100%;
-  min-height: 100%;
   background-color: #fff;
   position: relative;
   top: 0;
@@ -112,12 +111,12 @@ div.view {
   z-index: 1;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -125,7 +124,7 @@ footer {
   width: 100%;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
@@ -140,7 +139,7 @@ nav.mobile-menu .navigation {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 81, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
@@ -149,13 +148,13 @@ nav.mobile-menu .navigation li a {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .desktop-menu {
   display: none;
 }
 
 /* slideout js css */
-/* line 98, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -169,20 +168,20 @@ nav.mobile-menu .navigation li a {
   display: none;
 }
 
-/* line 111, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 116, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 122, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
