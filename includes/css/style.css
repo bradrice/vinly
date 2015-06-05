@@ -128,9 +128,8 @@ p {
 div.view {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   min-width: 100%;
-  min-height: 100%;
   background-color: #fff;
   position: relative;
   top: 0;
@@ -139,13 +138,13 @@ div.view {
   z-index: 1;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 section#main {
   flex: 1;
   padding: 1em;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -153,7 +152,7 @@ footer {
   width: 100%;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 nav.mobile-menu .navigation {
   list-style: none;
   background: #33D8C1;
@@ -168,7 +167,7 @@ nav.mobile-menu .navigation {
   padding-left: 0px;
   margin-top: 0px;
 }
-/* line 105, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 nav.mobile-menu .navigation li a {
   color: #fff;
   display: block;
@@ -177,13 +176,13 @@ nav.mobile-menu .navigation li a {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .desktop-menu {
   display: none;
 }
 
 /* slideout js css */
-/* line 122, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -197,34 +196,34 @@ nav.mobile-menu .navigation li a {
   display: none;
 }
 
-/* line 135, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 140, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 146, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
 /* albums */
-/* line 151, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 div.album {
   margin: 2em 0;
 }
-/* line 153, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 div.album h3 {
   color: #552300;
 }
-/* line 156, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 div.album img {
   width: 100%;
 }
