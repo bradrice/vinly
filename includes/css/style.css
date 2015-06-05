@@ -37,7 +37,6 @@ div.view {
   flex-direction: column;
   min-height: 100vh;
   min-width: 100%;
-  min-height: 100%;
   background-color: #fff;
   position: relative;
   top: 0;
@@ -46,12 +45,12 @@ div.view {
   z-index: 1;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 section#main {
   flex: 1;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 footer {
   min-height: 100px;
   background-color: #0D5047;
@@ -59,7 +58,7 @@ footer {
   width: 100%;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 .navigation {
   list-style: none;
   background: #33D8C1;
@@ -74,7 +73,7 @@ footer {
   padding-left: 0;
   margin-top: 0;
 }
-/* line 70, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 .navigation li a {
   color: #00352E;
   display: block;
@@ -83,7 +82,7 @@ footer {
   border-bottom: 1px solid #C36278;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -97,20 +96,20 @@ footer {
   display: none;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 98, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 104, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
