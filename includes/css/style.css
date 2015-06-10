@@ -1,6 +1,4 @@
 /* main site web styles */
-/* Main Secondary color (2) */
-/* Main Complement color */
 /* line 5, ../scss/style.scss */
 body {
   margin: 0;
@@ -157,7 +155,7 @@ nav.mobile-menu .navigation li a {
   }
   /* line 28, ../scss/_tablet.scss */
   nav.desktop-menu ul.navigation li a:hover {
-    background-color: #0D5047;
+    background-color: #32635c;
     color: #fff;
   }
 }
