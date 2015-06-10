@@ -10,3 +10,5 @@ $color-secondary-2-1: #6BA099;
 $color-secondary-2-2: #43857C;
 $color-secondary-2-3: #0D5047;
 $color-secondary-2-4: #00352E;
+
+$fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
