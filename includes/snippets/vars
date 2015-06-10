@@ -1,0 +1,12 @@
+$color-primary-0: #F63A66;	// Main Primary color */
+$color-primary-1: #EA9CAE;
+$color-primary-2: #C36278;
+$color-primary-3: #75142A;
+$color-primary-4: #4E0012;
+
+
+$color-secondary-2-0: #33D8C1;	// Main Secondary color (2) */
+$color-secondary-2-1: #6BA099;
+$color-secondary-2-2: #43857C;
+$color-secondary-2-3: #0D5047;
+$color-secondary-2-4: #00352E;
